@@ -1,0 +1,46 @@
+/*
+
+Simple selectors select elements based on their name, id, class
+
+static (top, buttom, left right)
+relative: position an element on another element
+fixed: Just as the name implies, its fix within your view point. it is static.
+absolute: Position it Respect to your relatively element
+sticky: Freeze the top panel
+*/
+
+html{
+    font-family: mon;
+}
+.Hero-bg-img,.Hero-bg-red{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 110vh;
+}
+.Hero-bg-red{
+    width: fit-content;
+}
+
+header{
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    color: white;
+}
+
+header ul{
+    display: flex;
+}
+header ul li{
+    display: flex;
+    padding: 0 10;
+}
+.Hero-bg-red{
+    position: absolute;
+    top: 0;
+}
